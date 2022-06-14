@@ -1,0 +1,46 @@
+.bordercountrywrapper{
+	text-align: center;
+	margin-top: 1.5em;
+
+	.list-countries {
+		margin-top: 1em;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 100px);
+		grid-auto-flow: columns;
+		gap: 0.75rem;
+		justify-content: flex-start;
+		margin-bottom: 16px;
+		.country{
+			padding:8px 0;
+			display: inline-block;
+			text-align: center;
+		}
+		
+	}
+
+	@media screen and (min-width: 900px) {
+		text-align: left;
+
+		.list-countries {
+			margin-bottom: 0;
+			grid-template-columns: repeat(auto-fill, 100px);
+			justify-content: flex-start;
+		}
+	}
+}
+
+.country{
+	text-decoration: none;
+	color: var(--primary);
+	cursor: pointer;
+	padding: 0.5em 2em;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	background: var(--secondary);
+	display: inline-flex;
+	transition: all 0.3s ease;
+	font-size: 16px;
+	&:hover {
+		transform: translatey(-0.2rem);
+	}
+}

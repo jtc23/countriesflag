@@ -1,0 +1,40 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary: #111517;
+	--secondary: #fff;
+	--background: #fafafa;
+}
+
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	background-color: var(--background);
+}
+
+main {
+	color: var(--primary);
+	background: var(--background);
+}
+
+.dark {
+	--primary: #fff;
+	--secondary: #2b3743;
+	--background: #202d36;
+}
+
+.dark a{
+	--primary: #fff;
+	--secondary: #2b3743;
+	--background: #202d36;
+}
+.wrapper {
+	max-width: 1312px;
+	margin: auto;
+	padding: 0 16px;
+}
